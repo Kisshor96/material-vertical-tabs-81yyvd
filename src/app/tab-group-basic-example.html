@@ -1,15 +1,23 @@
-<p>
-  <mat-toolbar color="primary">
-    <span>My Application</span>
-  </mat-toolbar>
-</p>
+<div class="row">
+  <div class="col-12">
+    <p>
+      <mat-toolbar color="primary">
+        <span>My Application</span>
+      </mat-toolbar>
+    </p>
+  </div>
+</div>
 
-<mat-toolbar color="warn" class="navbar">
-  <div><a href="javascript:void(0)">Nav1</a></div>
-  <div><a href="javascript:void(0)">Nav2</a></div>
-</mat-toolbar>
+<div class="row">
+  <div class="col-12">
+    <mat-toolbar color="warn">
+      <div><a href="javascript:void(0)">Nav1</a></div>
+      <div><a href="javascript:void(0)">Nav2</a></div>
+    </mat-toolbar>
+  </div>
+</div>
 
-<mat-tab-group>
+<!-- <mat-tab-group>
   <mat-tab label="A1 Detals">
     <h2>A1 Details</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias similique accusantium explicabo laboriosam
@@ -40,8 +48,47 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias similique accusantium explicabo laboriosam
       architecto placeat cupiditate officiis natus quia.</p>
   </mat-tab>
-</mat-tab-group>
+</mat-tab-group> -->
 
+
+<div class="row">
+  <div class="col-md-2">
+    <mat-list>
+      <mat-list-item>
+        <a routerLink="" fragment="home">Home</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a routerLink="" fragment="about">About</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a routerLink="" fragment="contact">Contact</a>
+      </mat-list-item>
+    </mat-list>
+  </div>
+
+  <div class="col-md-8">
+    <section id="home" class="home-section">
+      <h2> HOME SECTION </h2>
+      <div class="main-sec">
+        <img src="https://dummyimage.com/800x600/eeeeee/0fd701.jpg&text=HOME+SECTION+" alt="Home Section">
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2> ABOUT US SECTION </h2>
+      <div class="main-sec">
+        <img src="https://dummyimage.com/800x600/eeeeee/0fd701.jpg&text=ABOUT+US+SECTION+" alt="About Section">
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2> CONTACT US SECTION </h2>
+      <div class="main-sec">
+        <img src="https://dummyimage.com/800x600/eeeeee/0fd701.jpg&text=CONTACT+US+SECTION+" alt="Contact Section">
+      </div>
+    </section>
+  </div>
+</div>
 
 <!-- Copyright 2019 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
